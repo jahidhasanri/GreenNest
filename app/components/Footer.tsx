@@ -8,7 +8,7 @@ import { RiTwitterXFill } from 'react-icons/ri';
 import { IoLogoInstagram } from 'react-icons/io';
 const Footer = () => {
     return (
-        <div className='bg-[#ffffff] '>
+        <div className='bg-[#fafafa] '>
             <div className='max-w-322.5  mx-auto  grid grid-cols-1 md:grid-cols-2 md:pl-20 lg:pl-4 xl:pl-0 lg:grid-cols-4 md:gap-14 lg:gap-4 xl:gap-24 xl:pt-21 lg:mb-16 xl:mb-23 '>
                 {/* 1st div */}
                 <div className='ml-4 mb-10 md:mb-0 md:ml-0'>

@@ -59,15 +59,15 @@ const Navbar = () => {
           </ul>
 
           {/* Cart + Login (md and up) */}
-          <div className="hidden md:flex items-center gap-6">
+          <Link href={'/login'} className="hidden md:flex items-center gap-6">
             <TiShoppingCart
               size={26}
               className="cursor-pointer hover:text-[#5a8139]"
             />
-            <button className="bg-[#5a8139] hover:bg-[#5b8139d7] px-4 py-1.5 rounded">
+            <button className="bg-[#5a8139] hover:bg-[#5b8139d7] px-4 py-1.5 cursor-pointer rounded">
               Login
             </button>
-          </div>
+          </Link>
 
           {/* Hamburger (md & sm only) */}
           <div className="lg:hidden">
