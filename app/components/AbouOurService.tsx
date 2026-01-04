@@ -26,23 +26,24 @@ const AbouOurService = () => {
 ];
     return (
         <div
-        className="h-[85vh] w-full"
+        className="w-full"
       style={{ backgroundImage: "url('/images/flowers-pattern-1-white.svg')" }}>
         
            <div className='bg-[#2f4f2b]/95'>
-             <div className="container mx-auto text-center px-4">
+             <div className="container mx-auto text-center px-2.5">
         {/* Subtitle */}
-        <p className="text-[16px] font-bold text-gray-300 pt-34 mb-6 uppercase ">
+        <p className="text-[16px] font-bold text-gray-300 pt-24 xl:pt-34 mb-6 uppercase ">
           About Our Services
         </p>
 
         {/* Title */}
-        <h2 className="text-white text-3xl sm:text-4xl md:text-[40px] leading-snug font-bold mb-23">
+        <h2 className="text-white text-[24px] md:text-[30px] lg:text-[40px] leading-snug font-bold mb-14 lg:mb-18 xl:mb-23">
           We just love our work and plant nature, <br /> so we provide high quality products
         </h2>
 
         {/* Service Cards */}
-        <div className="flex flex-wrap justify-center gap-6 pb-30">
+        <div className="md:max-w-156 xl:max-w-322.5 mx-auto text-center grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 justify-items-center gap-6 pb-26 md:pb-28 xl:pb-30">
+
           {services.map((service, idx) => (
             <div
               key={idx}

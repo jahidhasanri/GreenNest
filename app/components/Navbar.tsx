@@ -26,6 +26,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
 
           {/* Logo */}
+         <Link href={'/'}>
           <Image
             src="/images/logo.png"
             alt="Green Nest Logo"
@@ -33,6 +34,7 @@ const Navbar = () => {
             height={50}
             priority
           />
+         </Link>
 
           {/* Desktop Menu (lg only) */}
           <ul className="hidden lg:flex gap-10 font-normal text-sm">

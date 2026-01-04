@@ -3,15 +3,15 @@ import Image from 'next/image';
 
 const CheckOutOurCategories = () => {
     return (
-        <div className='bg-white lg:pb-31'>
+        <div className='bg-white pb-20 lg:pb-31'>
             <div>
-                <h5 className="text-[#5a8139] font-semibold text-[18px] text-center pt-31 mb-6">Checkout our categories</h5>
-                <h1 className='text-[40px] font-bold text-black text-center mb-13'>Plants by Styles</h1>
+                <h5 className="text-[#5a8139] font-semibold text-[16px] md:text-[18px] text-center pt-16 xl:pt-28 mb-2 md:mb-6">Checkout our categories</h5>
+                <h1 className='text-[32px] md:text-[40px] font-bold text-black text-center mb-13'>Plants by Styles</h1>
             </div>
-            <div className='container mx-auto flex flex-wrap justify-center gap-6'>
+            <div className='md:max-w-full lg:max-w-210 xl:max-w-322.5 px-2   mx-auto grid grid-cols-1  lg:grid-cols-2 xl:grid-cols-3 justify-center gap-6'>
                 {/* 1st div */}
-                <div className=''>
-                    <div className='relative bg-[#e9ede9] hover:bg-[#2e4e2a] transition-all duration-500 ease-in-out mb-4.75 group'>
+                <div className='md:flex lg:grid gap-2 md:mx-16 lg:mx-0'>
+                    <div className='relative bg-[#e9ede9] hover:bg-[#2e4e2a] transition-all duration-500 ease-in-out mb-4 md:mb-0 xl:mb-4.75 group'>
                     <Image
                     src='/images/office plants.webp'
                     alt=''
@@ -37,7 +37,7 @@ const CheckOutOurCategories = () => {
                 </div>
 
                 {/* 2nd div */}
-                <div className='relative hover:bg-[#e9ede9] bg-[#2e4e2a]  transition-all duration-500 ease-in-out group'>
+                <div className='relative md:mx-44 lg:mx-0 hover:bg-[#e9ede9] bg-[#2e4e2a]  transition-all duration-500 ease-in-out group'>
                   <Image
                     src='/images/home plants.webp'
                     alt=''
@@ -50,8 +50,8 @@ const CheckOutOurCategories = () => {
                 </div>
 
                 {/* 3rd div */}
-                <div className=''>
-                    <div className=' bg-[#e9ede9] hover:bg-[#2e4e2a] transition-all duration-500 ease-in-out mb-4.75 group relative'>
+                <div className='md:flex lg:block gap-2 md:mx-16 lg:mx-0'>
+                    <div className=' bg-[#e9ede9] hover:bg-[#2e4e2a] transition-all duration-500 ease-in-out mb-4 md:mb-0 xl:mb-7 group relative'>
                      <Image
                     src='/images/cactus plants.webp'
                     alt=''
@@ -62,19 +62,32 @@ const CheckOutOurCategories = () => {
                          <h5 className="text-[16px] font-semibold mt-1 text-gray-600  group-hover:text-white">28 items</h5>
                     </div>
                     </div>
-                    <div className=' bg-[#e9ede9] hover:bg-[#2e4e2a] transition-all duration-500 ease-in-out group relative'>
+
+                    <div className='lg:hidden xl:block bg-[#e9ede9] hover:bg-[#2e4e2a] transition-all duration-500 ease-in-out group relative'>
                      <Image
                     src='/images/potted plants.webp'
                     alt=''
                     width={410}
                     height={270}></Image>
-                    <div className="absolute  items-start  text-white -mt-24 ml-8">
+                    <div className="absolute  lg:hidden xl:grid items-start  text-white -mt-24 ml-8">
                         <h3 className="text-2xl font-bold text-black   group-hover:text-white">Potted plants</h3>
                          <h5 className="text-[16px] font-semibold mt-1 text-gray-600  group-hover:text-white">20 items</h5>
                     </div>
                     </div>
                 </div>
-                
+
+                {/* 4th div */}
+                 <div className='hidden lg:block xl:hidden bg-[#e9ede9] hover:bg-[#2e4e2a] transition-all duration-500 ease-in-out group relative'>
+                     <Image
+                    src='/images/potted plants.webp'
+                    alt=''
+                    width={410}
+                    height={270}></Image>
+                    <div className="absolute  hidden lg:block xl:hidden items-start  text-white -mt-24 ml-8">
+                        <h3 className="text-2xl font-bold text-black   group-hover:text-white">Potted plants</h3>
+                         <h5 className="text-[16px] font-semibold mt-1 text-gray-600  group-hover:text-white">20 items</h5>
+                    </div>
+                    </div>
             </div>
         </div>
     );
